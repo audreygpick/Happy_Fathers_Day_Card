@@ -43,17 +43,23 @@ body {
     transition: 0.2s;
 }
 
-/*.card:hover .default-img {
-    visibility: hidden;
-    transition: 0.2s;
-} */
+.card .default-img {
+    visibility: visible;
+    transition: 0.15s;
+}
+.card .hover-img {
+  visibility: hidden;
+  transition: 0.15s;
+  transform: rotateY(180deg);
+}
+
 .card:hover .default-img {
     visibility: hidden;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 .card:hover .hover-img {
     visibility: visible;
-    transition: 0.2s;
+    transition: 0.5s;
     transform: rotateY(180deg);
 }
 
