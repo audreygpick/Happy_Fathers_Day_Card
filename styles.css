@@ -25,6 +25,7 @@ body {
 .display img {
     max-width: 100%;
     max-height: 100%;
+    position: absolute;
 }
 
 .card:hover {
@@ -37,15 +38,26 @@ body {
     transform: rotateY(-160deg);
 }
 
-.card:hover .title  {
+ .card:hover .title  {
     visibility: hidden;
     transition: 0.2s;
 }
 
-.card:hover .display {
+/*.card:hover .default-img {
+    visibility: hidden;
+    transition: 0.2s;
+} */
+.card:hover .default-img {
     visibility: hidden;
     transition: 0.2s;
 }
+.card:hover .hover-img {
+    visibility: visible;
+    transition: 0.2s;
+    transform: rotateY(180deg);
+}
+
+
 
 .title {
     font-family: Tahoma, sans-serif;
